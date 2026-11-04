@@ -8,10 +8,8 @@ struct station {
 
     int waiting_passengers;
     int available_seats;
-    int passengers_boarding;
     int passengers_boarded;
     int passengers_expected;
-    int car_present;
     int car_generation;
     int passengers_to_authorize;
 };
@@ -26,10 +24,9 @@ void station_init(struct station *station) {
 
     station->waiting_passengers = 0;
     station->available_seats = 0;
-    station->passengers_boarding = 0;
     station->passengers_boarded = 0;
     station->passengers_to_authorize = 0;
-    station->car_present = 0;
+    station->passengers_expected = 0;
     station->car_generation = 0;
 }
 
@@ -39,6 +36,10 @@ void station_init(struct station *station) {
 void station_load_car(struct station *station, int count) {
 
     pthread_mutex_lock(&station->lock);
+    
+    if (count <= 0) {
+        return;
+    }
 
     station->available_seats = count;
 
@@ -76,6 +77,17 @@ void station_wait_for_car(struct station *station){
     station->passengers_to_authorize--;
 
     pthread_mutex_unlock(&station->lock);
+}
+
+void station_on_board(struct station *station){
+    pthread_mutex_lock(&station->lock);
+
+    station->passengers_boarded ++;
+
+    pthread_cond_signal(&station->passenger_event);
+
+    pthread_mutex_unlock(&station->lock);
+
 }
 
 //station->available_seats--;
