@@ -1,0 +1,10 @@
+# Executáveis e arquivos compilados
+sync_car
+*.o
+
+# Arquivos temporários
+*.tmp
+*~
+
+# Configurações locais do VS Code
+.vscode/
