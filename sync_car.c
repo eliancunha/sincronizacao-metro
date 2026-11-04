@@ -1,18 +1,5 @@
 #include <pthread.h>
-
-struct station {
-    pthread_mutex_t lock;
-
-    pthread_cond_t car_available;
-    pthread_cond_t passenger_event;
-
-    int waiting_passengers;
-    int available_seats;
-    int passengers_boarded;
-    int passengers_expected;
-    int car_generation;
-    int passengers_to_authorize;
-};
+#include "sync_car.h"
 
 
 void station_init(struct station *station) {
@@ -23,7 +10,6 @@ void station_init(struct station *station) {
     pthread_cond_init(&station->passenger_event, NULL);
 
     station->waiting_passengers = 0;
-    station->available_seats = 0;
     station->passengers_boarded = 0;
     station->passengers_to_authorize = 0;
     station->passengers_expected = 0;
@@ -31,17 +17,15 @@ void station_init(struct station *station) {
 }
 
 
-//pthread_mutex_lock(&station->lock);
 
 void station_load_car(struct station *station, int count) {
 
-    pthread_mutex_lock(&station->lock);
-    
     if (count <= 0) {
         return;
     }
 
-    station->available_seats = count;
+    pthread_mutex_lock(&station->lock);
+    
 
     station->passengers_expected =station->waiting_passengers < count ? station->waiting_passengers : count;
 
@@ -73,7 +57,6 @@ void station_wait_for_car(struct station *station){
     }
 
     station->waiting_passengers--;
-    station->available_seats--;
     station->passengers_to_authorize--;
 
     pthread_mutex_unlock(&station->lock);
@@ -90,8 +73,3 @@ void station_on_board(struct station *station){
 
 }
 
-//station->available_seats--;
-
-//pthread_mutex_unlock(&station->lock);
-
-//passengers_expected = MIN(waiting_passengers, free_seats);
