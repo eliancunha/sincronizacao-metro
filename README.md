@@ -6,6 +6,10 @@ Este projeto implementa um mecanismo de sincronização entre passageiros e carr
 
 A implementação controla a chegada dos carros, a espera dos passageiros, a autorização para embarque e a confirmação de que os passageiros autorizados embarcaram antes da partida do carro.
 
+## Sistema operacional
+- Ubuntu 24.04 LTS (WSL2).
+
+
 ## Arquivos
 
 - `sync_car.c`: implementação das funções de sincronização da estação.
