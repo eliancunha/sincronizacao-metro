@@ -1,0 +1,408 @@
+Script started on 2026-11-04 19:53:24-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="122" LINES="15"]
+[?2004h]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ [7mdate[27m
+
+[7mwhoami[27m
+
+[7mpwd[27m[A[A
+]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ date
+
+whoami
+
+pwd
+[?2004l
+Wed Nov  4 19:53:41 -03 2026
+elian
+/home/elian/infraestruturasw/metro
+[?2004h]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ [7mmake clean[27m
+
+[7mmake[27m
+
+[7mmake test[27m[A[A
+]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ make clean
+
+make
+
+make test
+[?2004l
+rm -f sync_car test_sync_car *.o
+gcc -Wall -Wextra -Wpedantic -pthread -g sync_car.c sync_car-runner.c -o sync_car
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+./sync_car
+car entering station with 0 free seats
+car departed station with 0 new passenger(s) (expected 0)
+car entering station with 31 free seats
+car departed station with 31 new passenger(s) (expected 31)
+car entering station with 9 free seats
+car departed station with 9 new passenger(s) (expected 9)
+car entering station with 17 free seats
+car departed station with 17 new passenger(s) (expected 17)
+car entering station with 9 free seats
+car departed station with 9 new passenger(s) (expected 9)
+car entering station with 4 free seats
+car departed station with 4 new passenger(s) (expected 4)
+car entering station with 15 free seats
+car departed station with 15 new passenger(s) (expected 15)
+car entering station with 10 free seats
+car departed station with 10 new passenger(s) (expected 10)
+car entering station with 18 free seats
+car departed station with 5 new passenger(s) (expected 5)
+Looks good!
+[?2004h]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ [7mmake clean[27m
+
+[7mmake[27m
+
+[7mmake test[27m[A[A
+]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ make clean
+
+make
+
+[1Pmake tes[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[7mls -l[27mls -l
+[?2004l
+total 124
+-rw-r--r-- 1 elian elian   322 Nov  4 19:02 Makefile
+-rw-r--r-- 1 elian elian  1818 Nov  4 19:44 README.md
+-rw-r--r-- 1 elian elian     0 Nov  4 19:53 evidencias.log
+-rwxr-xr-x 1 elian elian 25784 Nov  4 19:53 [0m[01;32msync_car[0m
+-rw-r--r-- 1 elian elian  4229 Nov  4 18:30 sync_car-runner.c
+-rw-r--r-- 1 elian elian  1792 Nov  4 18:57 sync_car.c
+-rw-r--r-- 1 elian elian   559 Nov  4 18:21 sync_car.h
+-rwxr-xr-x 1 elian elian 16864 Nov  4 18:49 [01;32mteste_capacidade[0m
+-rw-r--r-- 1 elian elian  1984 Nov  4 18:49 teste_capacidade.c
+-rwxr-xr-x 1 elian elian 16880 Nov  4 18:47 [01;32mteste_chegada[0m
+-rw-r--r-- 1 elian elian  1720 Nov  4 18:46 teste_chegada.c
+-rwxr-xr-x 1 elian elian 16784 Nov  4 18:52 [01;32mteste_sinal[0m
+-rw-r--r-- 1 elian elian  1055 Nov  4 18:51 teste_sinal.c
+[?2004h]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ [7mexit[27mexit
+[?2004l
+exit
+
+Script done on 2026-11-04 19:54:25-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-04 20:58:49-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="122" LINES="15"]
+[?2004h]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ [7mdate[27m
+
+[7mwhoami[27m
+
+[7mpwd[27m[A[A
+]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ date
+
+whoami
+
+pwd
+[?2004l
+Wed Nov  4 20:59:16 -03 2026
+elian
+/home/elian/infraestruturasw/metro
+[?2004h]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ [7mecho "===== TESTE DE CHEGADA ====="[27m
+
+[7mgcc -Wall -Wextra -Wpedantic -pthread sync_car.c teste_chegada.c -o teste_chegada[27m
+
+[7m./teste_chegada[27m
+
+
+[7mecho "===== TESTE DE CAPACIDADE ====="[27m
+
+[7mgcc -Wall -Wextra -Wpedantic -pthread sync_car.c teste_capacidade.c -o teste_capacidade[27m
+
+[7m./teste_capacidade[27m
+
+
+[7mecho "===== TESTE DE SINAL ====="[27m
+
+[7mgcc -Wall -Wextra -Wpedantic -pthread sync_car.c teste_sinal.c -o teste_sinal[27m
+
+[7m./teste_sinal[27m[A[A[A[A[A[A[A[A[A[A
+]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ echo "===== TESTE DE CHEGADA ====="
+
+gcc -Wall -Wextra -Wpedantic -pthread sync_car.c teste_chegada.c -o teste_chegada
+
+./teste_chegada
+
+
+echo "===== TESTE DE CAPACIDADE ====="
+
+gcc -Wall -Wextra -Wpedantic -pthread sync_car.c teste_capacidade.c -o teste_capacidade
+
+./teste_capacidade
+
+
+echo "===== TESTE DE SINAL ====="
+
+gcc -Wall -Wextra -Wpedantic -pthread sync_car.c teste_sinal.c -o teste_sinal
+
+./teste_sinal
+[?2004l
+===== TESTE DE CHEGADA =====
+Passageiro 1: aguardando carro
+Passageiro 2: aguardando carro
+Carro chegou com 2 assentos
+Passageiro 1: autorizado a embarcar
+Passageiro 2: autorizado a embarcar
+Passageiro 3: aguardando carro
+Passageiro 1: embarcou
+Passageiro 2: embarcou
+Carro partiu!
+Carro chegou com 2 assentos
+Passageiro 3: autorizado a embarcar
+Passageiro 3: embarcou
+Carro partiu!
+===== TESTE DE CAPACIDADE =====
+Passageiro 1: aguardando carro
+Passageiro 3: aguardando carro
+Passageiro 2: aguardando carro
+Passageiro 4: aguardando carro
+Passageiro 5: aguardando carro
+
+=== Primeiro carro ===
+Passageiro 1: autorizado a embarcar
+Passageiro 3: autorizado a embarcar
+Passageiro 1: embarcou
+Carro partiu!
+Passageiro 3: embarcou
+
+=== Segundo carro ===
+Passageiro 2: autorizado a embarcar
+Passageiro 5: autorizado a embarcar
+Passageiro 2: embarcou
+Carro partiu!
+Passageiro 5: embarcou
+
+=== Terceiro carro ===
+Passageiro 4: autorizado a embarcar
+Passageiro 4: embarcou
+Carro partiu!
+
+Teste finalizado!
+===== TESTE DE SINAL =====
+Passageiro: aguardando carro
+
+Enviando sinal sem carro disponível...
+
+Chegando carro com um assento...
+Passageiro: autorizado a embarcar
+Passageiro: embarcou
+
+Teste finalizado!
+[?2004h]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ [7mecho "===== 20 EXECUÇÕES DO RUNNER OFICIAL ====="[27m
+
+
+[7mfor i in $(seq 1 20); do[27m
+
+[7m    echo "Execução $i"[27m
+
+[7m    ./sync_car || break[27m
+
+[7mdone[27m[A[A[A[A[A
+]0;elian@Elianmachine: ~/infraestruturasw/metro[01;32melian@Elianmachine[00m:[01;34m~/infraestruturasw/metro[00m$ echo "===== 20 EXECUÇÕES DO RUNNER OFICIAL ====="
+
+
+for i in $(seq 1 20); do
+
+    echo "Execução $i"
+
+    ./sync_car || break
+
+done
+[?2004l
+===== 20 EXECUÇÕES DO RUNNER OFICIAL =====
+Execução 1
+car entering station with 33 free seats
+car departed station with 33 new passenger(s) (expected 33)
+car entering station with 37 free seats
+car departed station with 37 new passenger(s) (expected 37)
+car entering station with 18 free seats
+car departed station with 18 new passenger(s) (expected 18)
+car entering station with 4 free seats
+car departed station with 4 new passenger(s) (expected 4)
+car entering station with 14 free seats
+car departed station with 8 new passenger(s) (expected 8)
+Looks good!
+Execução 2
+car entering station with 28 free seats
+car departed station with 28 new passenger(s) (expected 28)
+car entering station with 28 free seats
+car departed station with 28 new passenger(s) (expected 28)
+car entering station with 21 free seats
+car departed station with 21 new passenger(s) (expected 21)
+car entering station with 10 free seats
+car departed station with 10 new passenger(s) (expected 10)
+car entering station with 21 free seats
+car departed station with 13 new passenger(s) (expected 13)
+Looks good!
+Execução 3
+car entering station with 47 free seats
+car departed station with 47 new passenger(s) (expected 47)
+car entering station with 11 free seats
+car departed station with 11 new passenger(s) (expected 11)
+car entering station with 44 free seats
+car departed station with 42 new passenger(s) (expected 42)
+Looks good!
+Execução 4
+car entering station with 29 free seats
+car departed station with 29 new passenger(s) (expected 29)
+car entering station with 43 free seats
+car departed station with 43 new passenger(s) (expected 43)
+car entering station with 27 free seats
+car departed station with 27 new passenger(s) (expected 27)
+car entering station with 34 free seats
+car departed station with 1 new passenger(s) (expected 1)
+Looks good!
+Execução 5
+car entering station with 19 free seats
+car departed station with 19 new passenger(s) (expected 19)
+car entering station with 27 free seats
+car departed station with 27 new passenger(s) (expected 27)
+car entering station with 26 free seats
+car departed station with 26 new passenger(s) (expected 26)
+car entering station with 18 free seats
+car departed station with 18 new passenger(s) (expected 18)
+car entering station with 33 free seats
+car departed station with 10 new passenger(s) (expected 10)
+Looks good!
+Execução 6
+car entering station with 34 free seats
+car departed station with 34 new passenger(s) (expected 34)
+car entering station with 6 free seats
+car departed station with 6 new passenger(s) (expected 6)
+car entering station with 3 free seats
+car departed station with 3 new passenger(s) (expected 3)
+car entering station with 5 free seats
+car departed station with 5 new passenger(s) (expected 5)
+car entering station with 24 free seats
+car departed station with 24 new passenger(s) (expected 24)
+car entering station with 39 free seats
+car departed station with 28 new passenger(s) (expected 28)
+Looks good!
+Execução 7
+car entering station with 3 free seats
+car departed station with 3 new passenger(s) (expected 3)
+car entering station with 47 free seats
+car departed station with 47 new passenger(s) (expected 47)
+car entering station with 16 free seats
+car departed station with 16 new passenger(s) (expected 16)
+car entering station with 19 free seats
+car departed station with 19 new passenger(s) (expected 19)
+car entering station with 46 free seats
+car departed station with 15 new passenger(s) (expected 15)
+Looks good!
+Execução 8
+car entering station with 40 free seats
+car departed station with 40 new passenger(s) (expected 40)
+car entering station with 30 free seats
+car departed station with 30 new passenger(s) (expected 30)
+car entering station with 29 free seats
+car departed station with 29 new passenger(s) (expected 29)
+car entering station with 34 free seats
+car departed station with 1 new passenger(s) (expected 1)
+Looks good!
+Execução 9
+car entering station with 7 free seats
+car departed station with 7 new passenger(s) (expected 7)
+car entering station with 1 free seats
+car departed station with 1 new passenger(s) (expected 1)
+car entering station with 21 free seats
+car departed station with 21 new passenger(s) (expected 21)
+car entering station with 7 free seats
+car departed station with 7 new passenger(s) (expected 7)
+car entering station with 5 free seats
+car departed station with 5 new passenger(s) (expected 5)
+car entering station with 13 free seats
+car departed station with 13 new passenger(s) (expected 13)
+car entering station with 22 free seats
+car departed station with 22 new passenger(s) (expected 22)
+car entering station with 46 free seats
+car departed station with 24 new passenger(s) (expected 24)
+Looks good!
+Execução 10
+car entering station with 47 free seats
+car departed station with 47 new passenger(s) (expected 47)
+car entering station with 44 free seats
+car departed station with 44 new passenger(s) (expected 44)
+car entering station with 6 free seats
+car departed station with 6 new passenger(s) (expected 6)
+car entering station with 14 free seats
+car departed station with 3 new passenger(s) (expected 3)
+Looks good!
+Execução 11
+car entering station with 6 free seats
+car departed station with 6 new passenger(s) (expected 6)
+car entering station with 47 free seats
+car departed station with 47 new passenger(s) (expected 47)
+car entering station with 35 free seats
+car departed station with 35 new passenger(s) (expected 35)
+car entering station with 42 free seats
+car departed station with 12 new passenger(s) (expected 12)
+Looks good!
+Execução 12
+car entering station with 39 free seats
+car departed station with 39 new passenger(s) (expected 39)
+car entering station with 20 free seats
+car departed station with 20 new passenger(s) (expected 20)
+car entering station with 32 free seats
+car departed station with 32 new passenger(s) (expected 32)
+car entering station with 19 free seats
+car departed station with 9 new passenger(s) (expected 9)
+Looks good!
+Execução 13
+car entering station with 48 free seats
+car departed station with 48 new passenger(s) (expected 48)
+car entering station with 34 free seats
+car departed station with 34 new passenger(s) (expected 34)
+car entering station with 8 free seats
+car departed station with 8 new passenger(s) (expected 8)
+car entering station with 9 free seats
+car departed station with 9 new passenger(s) (expected 9)
+car entering station with 45 free seats
+car departed station with 1 new passenger(s) (expected 1)
+Looks good!
+Execução 14
+car entering station with 19 free seats
+car departed station with 19 new passenger(s) (expected 19)
+car entering station with 43 free seats
+car departed station with 43 new passenger(s) (expected 43)
+car entering station with 0 free seats
+car departed station with 0 new passenger(s) (expected 0)
+car entering station with 27 free seats
+car departed station with 27 new passenger(s) (expected 27)
+car entering station with 36 free seats
+car departed station with 11 new passenger(s) (expected 11)
+Looks good!
+Execução 15
+car entering station with 23 free seats
+car departed station with 23 new passenger(s) (expected 23)
+car entering station with 49 free seats
+car departed station with 49 new passenger(s) (expected 49)
+car entering station with 7 free seats
+car departed station with 7 new passenger(s) (expected 7)
+car entering station with 33 free seats
+car departed station with 21 new passenger(s) (expected 21)
+Looks good!
+Execução 16
+car entering station with 40 free seats
+car departed station with 40 new passenger(s) (expected 40)
+car entering station with 5 free seats
+car departed station with 5 new passenger(s) (expected 5)
+car entering station with 18 free seats
+car departed station with 18 new passenger(s) (expected 18)
+car entering station with 31 free seats
+car departed station with 31 new passenger(s) (expected 31)
+car entering station with 46 free seats
+car departed station with 6 new passenger(s) (expected 6)
+Looks good!
+Execução 17
+car entering station with 47 free seats
+car departed station with 47 new passenger(s) (expected 47)
+car entering station with 8 free seats
+car departed station with 8 new passenger(s) (expected 8)
+car entering station with 19 free seats
+car departed station with 19 new passenger(s) (expected 19)
+car entering station with 32 free seats
+car departed station with 26 new passenger(s) (expected 26)
+Looks good!
+Execução 18
+car entering station with 38 free seats
+car departed station with 38 new pas
